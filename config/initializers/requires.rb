@@ -1,2 +1,2 @@
 require 'simple_strategy'
-require 'my_api_authenticatable'
+require 'my_authentication'
