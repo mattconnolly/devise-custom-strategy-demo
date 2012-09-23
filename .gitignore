@@ -13,3 +13,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# rubymine
+/.idea
+
+# mac stuff
+.DS_Store
