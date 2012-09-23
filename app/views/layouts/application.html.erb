@@ -8,7 +8,14 @@
 </head>
 <body>
 
-<%= yield %>
+<div id="flash">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+</div>
+
+<div id="content">
+  <%= yield %>
+</div>
 
 </body>
 </html>
