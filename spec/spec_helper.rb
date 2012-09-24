@@ -35,4 +35,9 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+
+  config.include Devise::TestHelpers, :type => :controller
 end
+
+require 'factory_girl'
