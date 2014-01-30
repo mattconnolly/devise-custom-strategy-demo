@@ -9,8 +9,7 @@ module MyAuthentication
 
       # but, we want this strategy to be valid for any request with this header set so that we can use a custom
       # response for an invalid request.
-      @env['HTTP_X_MY_API'].present?
-      true
+      request.headers['HTTP_X_MY_API'].present?
     end
 
 
