@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "authenticated with my_authentication" do
+describe "example request spec" do
   let(:user) { FactoryGirl.create :user }
 
   context 'notes#index' do
