@@ -24,9 +24,9 @@ module MyAuthentication
       # the `devise` class method in that model
       klass = mapping.to
 
-      if @env['HTTP_X_MY_API'].present?
+      if request.headers['HTTP_X_MY_API'].present?
         # the returned user object will be saved and serialised into the session
-        user = klass.find_or_initialize_by_email(@env['HTTP_X_MY_API'])
+        user = klass.find_or_initialize_by_email(request.headers['HTTP_X_MY_API'])
         success! user
       end
 
